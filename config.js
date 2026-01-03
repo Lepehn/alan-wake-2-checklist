@@ -21,7 +21,7 @@ const GAME = {
     radioShow: "Radio Shows",
     writersJourney: "Writer's Journey",
     nurseryDoll: "Nursery Dolls",
-    nurseryRhymn: "Nursery Rhymns",
+    nurseryRhyme: "Nursery Rhymes",
     deerHead: "Deer Heads",
     mayorSetterSign: "Mayor Setter Signs",
     wordsOfPower: "Words of Power",
@@ -237,7 +237,7 @@ const GAME = {
   nurseryDoll:  [
     { name: "", tag: "Alan", status: "NotStarted", note: ""}
   ],
-  nurseryRhymn:  [
+  nurseryRhyme:  [
     { name: "", tag: "Alan", status: "NotStarted", note: ""}
   ],
   deerHead:  [
