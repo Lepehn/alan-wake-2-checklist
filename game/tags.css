@@ -1,0 +1,68 @@
+ :root {
+ /* Tag Colors */
+  --tag-saga: #1c4587;
+  --tag-alan: #ea4335;
+
+  --tag-return: #023570;
+  --tag-draft: #1eaa0b;
+  --tag-casey-bilboard: #b23c05;
+
+  --tag-cauldronLake: #6aa84f;
+  --tag-watery: #e21474;
+  --tag-brightFalls: #e69138;
+  --tag-brightFallsSherifStation: #3c78d8;
+  --tag-theOverlap: #e06666;
+  --tag-theTalkShowStudio: #a64d79;
+  --tag-theDarkPlace: #434343;
+  --tag-subway: #ffe599;
+  --tag-apartment: #a64d79;
+}
+
+.tag.Saga {
+  background: var(--tag-saga);
+  color: var(--status-text);
+}
+
+.tag.Alan {
+  background: var(--tag-alan);
+  color: var(--status-text);
+}
+
+.tag.CAULDRON-LAKE {
+  background: var(--tag-cauldronLake);
+  color: var(--status-text);
+}
+
+.tag.WATERY {
+  background: var(--tag-watery);
+  color: var(--status-text);
+}
+
+.tag.BRIGHT-FALLS {
+  background: var(--tag-brightFalls);
+  color: var(--status-text);
+}
+
+.tag.RETURN-1,
+.tag.RETURN-2,
+.tag.RETURN-3,
+.tag.RETURN-5,
+.tag.RETURN-6,
+.tag.RETURN-7,
+.tag.RETURN-9
+{
+  background: var(--tag-return);
+  color: var(--status-text);
+}
+
+.tag.DRAFT-ONE,
+.tag.DRAFT-TWO,
+.tag.DRAFT-THREE {
+  background: var(--tag-draft);
+  color: var(--status-text);
+}
+
+.tag.CASEY-BILLBOARDS {
+  background: var(--tag-casey-bilboard);
+  color: var(--status-text);
+}
