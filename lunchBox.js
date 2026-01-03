@@ -1,0 +1,23 @@
+export const lunchBox = [
+    { name: "Waterfall Vista", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "Witch’s Hut", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "FBC Station", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "Witchfinder's Station", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "Waterfall", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "Campground", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "Landslide", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "Rental Cabins", tag: "CAULDRON LAKE, Saga", status: "NotStarted", note: ""},
+    { name: "Radio Tower", tag: "WATERY, Saga", status: "NotStarted", note: ""},
+    { name: "Above the Ranger's Cabin", tag: "WATERY, Saga", status: "NotStarted", note: ""},
+    { name: "Coffee World", tag: "WATERY, Saga", status: "NotStarted", note: ""},
+    { name: "Lighthouse Trailer Park", tag: "WATERY, Saga", status: "NotStarted", note: ""},
+    { name: "Kalevala Knights Workshop", tag: "WATERY, Saga", status: "NotStarted", note: ""},
+    { name: "Lighthouse", tag: "WATERY, Saga", status: "NotStarted", note: ""},
+    { name: "Valhalla Nursing Home", tag: "BRIGHT FALLS, Saga", status: "NotStarted", note: ""},
+    { name: "Ranger Station", tag: "BRIGHT FALLS, Saga", status: "NotStarted", note: ""},
+    { name: "Shoreline", tag: "BRIGHT FALLS, Saga", status: "NotStarted", note: ""},
+    { name: "Center Bright Falls (Forest)", tag: "BRIGHT FALLS, Saga", status: "NotStarted", note: ""},
+    { name: "Founder's Park", tag: "BRIGHT FALLS, Saga", status: "NotStarted", note: ""},
+    { name: "Bunker Woods", tag: "BRIGHT FALLS, Saga", status: "NotStarted", note: ""},
+    { name: "Billie’s Boat Yard", tag: "BRIGHT FALLS, Saga", status: "NotStarted", note: ""}
+];

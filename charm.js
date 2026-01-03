@@ -1,0 +1,20 @@
+export const charm = [
+    { name: "Logan’s Charm", tag: "RETURN 2, Saga", status: "NotStarted", note: ""},
+    { name: "Hammer Charm", tag: "RETURN 2, Saga", status: "NotStarted", note: ""},
+    { name: "Kalevala Knights Charm", tag: "RETURN 2, Saga", status: "NotStarted", note: ""},
+    { name: "Coffee Mug Charm (#1)", tag: "RETURN 2, Saga", status: "NotStarted", note: ""},
+    { name: "Coffee Mug Charm (#2)", tag: "RETURN 3, Saga", status: "NotStarted", note: ""},
+    { name: "Deer Charm", tag: "RETURN 3, Saga", status: "NotStarted", note: ""},
+    { name: "Coffee World Token Charm", tag: "RETURN 3, Saga", status: "NotStarted", note: ""},
+    { name: "Lighthouse Charm", tag: "RETURN 3, Saga", status: "NotStarted", note: ""},
+    { name: "Mr. Drippy Charm", tag: "RETURN 3, Saga", status: "NotStarted", note: ""},
+    { name: "FBC Charm", tag: "RETURN 3, Saga", status: "NotStarted", note: ""},
+    { name: "Coffee Mug Charm (#3)", tag: "RETURN 3, Saga", status: "NotStarted", note: ""},
+    { name: "Lantern Charm", tag: "RETURN 5, Saga", status: "NotStarted", note: ""},
+    { name: "Coffee Mug Charm (#4)", tag: "RETURN 5, Saga", status: "NotStarted", note: ""},
+    { name: "Valhalla Nursing Home Charm", tag: "RETURN 5, Saga", status: "NotStarted", note: ""},
+    { name: "Anchor Charm", tag: "RETURN 5, Saga", status: "NotStarted", note: ""},
+    { name: "Mayor Setter Charm", tag: "RETURN 5, Saga", status: "NotStarted", note: ""},
+    { name: "Deerfest Charm", tag: "RETURN 5, Saga", status: "NotStarted", note: ""},
+    { name: "Coffee Mug Charm (#5)", tag: "RETURN 5, Saga", status: "NotStarted", note: ""}
+];
