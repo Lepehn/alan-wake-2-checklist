@@ -52,7 +52,6 @@
   --tag-theDarkPlace: #434343;
   --tag-subway: #ffe599;
   --tag-apartment: #a64d79;
-
 }
 
 body {
@@ -443,3 +442,5 @@ body.discord-theme {
   vertical-align: middle;
   line-height: 0;
 }
+
+footer {text-align: center;}
