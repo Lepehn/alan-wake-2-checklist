@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Alan Wake 2 Checklist</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="ui/app.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add,check,delete,download,list,progress_activity,settings,upload" />
 </head>
 <body>
@@ -61,17 +61,17 @@
         <span class="button-report" data-cat="echo">Echos</span>
         <span class="button-report" data-cat="koskelaAd">Koskela Ads</span>
         <span class="button-report" data-cat="manuscript">Manuscripts</span>
-        <span class="button-report" data-cat="map">Maps</span>
+        <span class="button-report" data-cat="locationMap">Maps</span>
         <span class="button-report" data-cat="radioShow">Radio Shows</span>
         <span class="button-report" data-cat="writersJourney">Writer's Journey</span>
         <span class="button-report" data-cat="nurseryDoll">Nursery Dolls WIP</span>
-        <span class="button-report" data-cat="nurseryRhyme">Nursery Rhymes WIP</span>
+        <span class="button-report" data-cat="nurseryRhymn">Nursery Rhymns WIP</span>
         <span class="button-report" data-cat="deerHead">Deer Heads WIP</span>
         <span class="button-report" data-cat="mayorSetterSign">Mayor Setter Signs WIP</span>
         <span class="button-report" data-cat="wordsOfPower">Words of Power WIP</span>
         <span class="button-report" data-cat="suitcaseStash">Suitcase Stashes WIP</span>
         <span class="button-report" data-cat="weapon">Weapons</span>
-        <span class="button-report" data-cat="song">Songs WIP</span>
+        <span class="button-report" data-cat="song">Songs</span>
 
         <div class="scrollable-list-large">
           <ul id="questCategoryContainer"></ul>
@@ -132,11 +132,12 @@
     <button id="closeSettingsModal">Close</button>
   </div>
 </div>
-  
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="config.js"></script>
-<script src="engine.js"></script>
+<script type="module" src="/game/game.js"></script>
+<script type="module" src="core/engine.js"></script>
+<script type="module" src="ui/themes.js"></script>
 </body>
-<footer> <p>© 2025-2026 Aaron Smith. All rights reserved.
-Unauthorized use prohibited.</p> </footer>
+<footer> <p>© 2025-2026 Aaron Smith. All rights reserved.</p> <p>Unauthorized use prohibited.</p></footer>
+
 </html>
