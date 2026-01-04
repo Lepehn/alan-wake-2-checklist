@@ -329,6 +329,7 @@ document.querySelectorAll(".navbar .menu a").forEach(a => {
    ===================================================== */
 document.getElementById("exportBtn").addEventListener("click", () => {
   const saveData = {
+    id: GAME.id,
     version: 2,
     playthroughs: GAME.playthroughs
   };
@@ -361,6 +362,12 @@ document.getElementById("importJSON").addEventListener("change", e => {
   reader.onload = () => {
     try {
       const imported = JSON.parse(reader.result);
+
+      // 🔒 Verify game ID
+      if (imported.id !== GAME.id) {
+        throw new Error("This save file does not belong to this game");
+      }
+      
       let playthroughs;
 
       // NEW MULTI-PT FORMAT
@@ -422,6 +429,7 @@ document.getElementById("importJSON").addEventListener("change", e => {
 /* =====================================================
    INIT
    ===================================================== */
+
 
 renderTable();
 
