@@ -361,18 +361,46 @@ document.getElementById("importJSON").addEventListener("change", e => {
   reader.onload = () => {
     try {
       const imported = JSON.parse(reader.result);
+      let playthroughs;
 
-      // 🧠 NEW MULTI-PT FORMAT
+      // NEW MULTI-PT FORMAT
       if (imported.playthroughs) {
-        GAME.playthroughs = imported.playthroughs;
+        playthroughs = imported.playthroughs;
       }
-      // 🧠 OLD FORMAT → MIGRATE TO PT1
+      // OLD FORMAT → MIGRATE TO PT1
       else {
-        GAME.playthroughs = {
+        playthroughs = {
           1: imported,
           2: structuredClone(GAME.data)
         };
       }
+
+      // UNIVERSAL STRICT NAME VALIDATION (allow extra fields)
+      const validateNames = (obj) => {
+        if (Array.isArray(obj)) {
+          if (obj.length === 0) return false;
+          return obj.every(item => validateNames(item));
+        } else if (obj && typeof obj === "object" && !Array.isArray(obj)) {
+          return "name" in obj;
+        }
+        return false;
+      };
+
+      // Recursively check each array in playthroughs
+      const checkPlaythroughs = (obj) => {
+        if (Array.isArray(obj)) {
+          if (!validateNames(obj)) throw new Error("Invalid save: missing 'name'");
+        } else if (obj && typeof obj === "object") {
+          for (const val of Object.values(obj)) {
+            checkPlaythroughs(val);
+          }
+        }
+      };
+
+      checkPlaythroughs(playthroughs);
+
+      // ✅ Commit after passing check
+      GAME.playthroughs = playthroughs;
 
       saveGame();
       renderTable();
@@ -380,10 +408,11 @@ document.getElementById("importJSON").addEventListener("change", e => {
 
       alert("Import successful!");
     } catch (err) {
-      alert("Invalid save file.");
+      console.error(err);
+      alert("Invalid save file. Import cancelled.");
+    } finally {
+      e.target.value = ""; // reset input
     }
-
-    e.target.value = ""; // reset input
   };
 
   reader.readAsText(file);
@@ -395,3 +424,4 @@ document.getElementById("importJSON").addEventListener("change", e => {
    ===================================================== */
 
 renderTable();
+
