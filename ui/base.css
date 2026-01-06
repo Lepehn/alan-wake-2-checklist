@@ -1,5 +1,4 @@
 :root {
-  --border: #222;
   --radius: 8px;
   
   /* Fonts */
@@ -33,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--hover);
 }
 .navbar .logo { font-size: var(--font-size-extra-large); font-weight: bold;}
 .navbar .menu { display: flex; gap: 30px; }
@@ -71,7 +70,6 @@ body {
   background: var(--card);
   padding: 20px;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
   box-shadow: 0 3px 10px rgba(0,0,0,0.06);
 }
 .card-header {
@@ -121,7 +119,7 @@ body {
 table { width: 100%; border-collapse: collapse; }
 table td, table th {
   padding: 12px 6px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--hover);
   font-size: var(--font-size-small);
 }
 table th { color: var(--text-muted); text-align: left; }
@@ -147,7 +145,6 @@ ul li { margin-bottom: 8px; font-size: var(--font-size-medium); }
 .statusSelect {
   padding: 6px 12px;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
   font-size: var(--font-size-small);
   background: var(--button);
   color: var(--text-muted);
@@ -259,5 +256,6 @@ ul li { margin-bottom: 8px; font-size: var(--font-size-medium); }
   line-height: 0;
 }
 
-footer {text-align: center; margin-top: 240px;}
+footer {color: var(--text-muted); text-align: center; margin-top: 240px;}
+
 
