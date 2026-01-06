@@ -26,6 +26,48 @@ document.querySelectorAll(".theme-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const theme = btn.dataset.theme;
 
+    if (theme === "ash") {
+      document.body.classList.add("ash-theme");
+    } else {
+      document.body.classList.remove("ash-theme");
+    }
+
+       if (theme === "basalt") {
+      document.body.classList.add("basalt-theme");
+    } else {
+      document.body.classList.remove("basalt-theme");
+    }
+
+         if (theme === "limestone") {
+      document.body.classList.add("limestone-theme");
+    } else {
+      document.body.classList.remove("limestone-theme");
+    }
+
+         if (theme === "ember") {
+      document.body.classList.add("ember-theme");
+    } else {
+      document.body.classList.remove("ember-theme");
+    }
+
+         if (theme === "sand") {
+      document.body.classList.add("sand-theme");
+    } else {
+      document.body.classList.remove("sand-theme");
+    }
+
+         if (theme === "rust") {
+      document.body.classList.add("rust-theme");
+    } else {
+      document.body.classList.remove("rust-theme");
+    }
+
+         if (theme === "clay") {
+      document.body.classList.add("clay-theme");
+    } else {
+      document.body.classList.remove("clay-theme");
+    }
+
     if (theme === "alt") {
       document.body.classList.add("alt-theme");
     } else {
@@ -60,3 +102,4 @@ if (localStorage.getItem("theme") === "scandi") {
 if (localStorage.getItem("theme") === "discord-dark") {
   document.body.classList.add("discord-theme");
 }
+
