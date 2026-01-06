@@ -1,10 +1,4 @@
 :root {
-  /* Core Colors*/
-  --background: #141414;
-  --card: #1E1E1E;
-  --card-inlay: #1a1a1a;
-  --button: #262626;
-  --hover: #383838;
   --border: #222;
   --radius: 8px;
   
@@ -14,10 +8,6 @@
   --font-size-medium: 16px;
   --font-size-large: 18px;
   --font-size-extra-large: 24px;
-
-  /* Text Colors */
-  --text: #fff;
-  --text-muted: #999;
 
   /* Status Colors */
   --status-completed: #278041;
@@ -270,3 +260,4 @@ ul li { margin-bottom: 8px; font-size: var(--font-size-medium); }
 }
 
 footer {text-align: center; margin-top: 240px;}
+
