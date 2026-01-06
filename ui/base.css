@@ -166,8 +166,8 @@ ul li { margin-bottom: 8px; font-size: var(--font-size-medium); }
   padding: 6px 12px;
   border-radius: var(--radius);
   font-size: var(--font-size-small);
-  color:#aaa; 
-  background:#1a1a1a; 
+  color: var(--text-muted);
+  background: var(--card-inlay);
   margin-top:8px; 
   margin-bottom:8px; 
   display: block;
@@ -257,5 +257,6 @@ ul li { margin-bottom: 8px; font-size: var(--font-size-medium); }
 }
 
 footer {color: var(--text-muted); text-align: center; margin-top: 240px;}
+
 
 
