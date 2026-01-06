@@ -74,12 +74,6 @@ document.querySelectorAll(".theme-btn").forEach(btn => {
     } else {
       document.body.classList.remove("alt-theme");
     }
-    
-    if (theme === "scandi") {
-      document.body.classList.add("scandi-theme");
-    } else {
-      document.body.classList.remove("scandi-theme");
-    }
 
     if (theme === "discord-dark") {
       document.body.classList.add("discord-theme");
@@ -125,10 +119,7 @@ if (localStorage.getItem("theme") === "alt") {
   document.body.classList.add("alt-theme");
 }
 
-if (localStorage.getItem("theme") === "scandi") {
-  document.body.classList.add("scandi-theme");
-}
-
 if (localStorage.getItem("theme") === "discord-dark") {
   document.body.classList.add("discord-theme");
 }
+
